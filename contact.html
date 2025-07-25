@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ISRO</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="https://wallpapercave.com/wp/wp4981229.gif" height="250px" width="250px" alt="ISRO Logo"></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We value your feedback and inquiries. Please fill out the form below to get in touch with us.</p>
+
+      <div class="contact-form">
+        <form action="submit_form.php" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p><strong>Address:</strong> ISRO HQ, Antariksh Bhavan, New BEL Road, Bengaluru 560 231, India</p>
+        <p><strong>Phone:</strong> +91-80-22172294 / 96</p>
+        <p><strong>Email:</strong> <a href="mailto:info@isro.gov.in">info@isro.gov.in</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 ISRO. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

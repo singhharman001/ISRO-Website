@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0px;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Gradient background */
+  color: #ffffff;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  background-color: rgba(22, 36, 71, 0.9);
+  padding: 20px;
+  border-bottom: 2px solid #e43f5a;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #e43f5a;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+}
+
+.intro, .missions, .future {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(31, 64, 104, 0.9);
+  border-radius: 8px;
+}
+
+.intro h2, .missions h2, .future h2 {
+  color: #e43f5a;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.missions .mission {
+  margin-bottom: 20px;
+}
+
+.missions .mission img {
+  margin-top: 10px;
+}
+
+/* Links */
+a {
+  color: #f5a623;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: rgba(22, 36, 71, 0.9);
+  padding: 10px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #f5a623;
+  text-decoration: none;
+}

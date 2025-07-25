@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(120deg, #1e3c72, #2a5298, #b11226);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header-container p {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+}
+
+/* Main Section */
+main {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.mission-details,
+.mission-image,
+.objectives,
+.additional-content,
+.references {
+  margin-bottom: 2rem;
+}
+
+.mission-details h2,
+.objectives h2,
+.additional-content h2,
+.references h2 {
+  color: #b11226;
+  margin-bottom: 0.5rem;
+}
+
+.mission-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid #b11226;
+}
+
+/* Objectives List */
+.objectives ul {
+  list-style-type: square;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.objectives li {
+  margin-bottom: 0.5rem;
+}
+
+/* References */
+.references ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.references a {
+  color: #1e3c72;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+  color: #b11226;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}

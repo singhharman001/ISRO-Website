@@ -1,0 +1,381 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 3;
+  color: #333;
+ 
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+ 
+}
+
+.container img{
+  margin-right: 30px;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+/* Header Styles */
+header {
+  background: #003366;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #003366;
+  background: url('https://images.indianexpress.com/2023/07/ISRO-chandrayaan-3-mission-20230713.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  border: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(91, 138, 190);
+  text-align: center;
+  padding: 0%;
+  
+}
+
+#hero h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* About, Missions, and News Sections */
+section {
+  padding: 40px 0;
+  background-color: #003366;
+}
+
+section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003366;
+}
+
+section p, .mission-list {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-list li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* News Section */
+.news-item {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #003366;
+}
+
+.news-item h4 {
+  font-size: 20px;
+  color: #003366;
+}
+
+/* Space Awaits Section */
+.space-awaits {
+  text-align: center;
+  background-color: #171717;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Card Section */
+.card {
+  width: 190px;
+  height: 254px;
+  background: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+}
+
+.card .content {
+  border-radius: 5px;
+  background: #171717;
+  width: 186px;
+  height: 250px;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: ' ';
+  display: block;
+  background: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
+}
+
+.card:hover .content::before {
+  opacity: 1;
+}
+
+.card::before {
+  opacity: 0;
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 360px;
+  background: linear-gradient(90deg, transparent, #ff2288, #387EF0, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.card::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 190px;
+  height: 254px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional Styles for Cards */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+#about {
+  background-color: #6e98bb;
+  padding: 40px 0;
+}
+
+#about h3 {
+  font-size: 28px;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  text-align: center;
+  max-width: 900px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* From Uiverse.io by Randdose */
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+.button p {
+  z-index: 1;
+}
+
+.button:hover {
+  color: #212121;
+}
+
+.button:active {
+  border-color: teal;
+}
+
+.button::after, .button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: rgb(202, 156, 29);
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover:before {
+  transform: translateX(-1em);
+}
+
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: rgb(216, 14, 216);
+}
+
+/* Optional: Reset default styles for the <a> tag */
+a {
+  text-decoration: none;  /* Removes underlining */
+  color: inherit;         /* Ensures the button text color remains the same */
+}
+
+
+.about {
+  background-color: rgb(rgb(107, 128, 221), green, blue);
+}
+section h6 {
+  padding: 15px ;
+  background-color: #bbca32;
+
+  text-align: center;
+  text-size-adjust: 10px;
+  font: 700;
+  font-size: 20px;
+  font-style: italic;
+}
+
+buttonc {
+  --width: 150px;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  transition: all 0.2s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+buttonc:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 82, 82),
+    rgb(250, 82, 82) 16.65%,
+    rgb(190, 75, 219) 16.65%,
+    rgb(190, 75, 219) 33.3%,
+    rgb(76, 110, 245) 33.3%,
+    rgb(76, 110, 245) 49.95%,
+    rgb(64, 192, 87) 49.95%,
+    rgb(64, 192, 87) 66.6%,
+    rgb(250, 176, 5) 66.6%,
+    rgb(250, 176, 5) 83.25%,
+    rgb(253, 126, 20) 83.25%,
+    rgb(253, 126, 20) 100%,
+    rgb(250, 82, 82) 100%
+  );
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}

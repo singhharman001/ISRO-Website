@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Organization - Homepage</title>
+    <link rel="stylesheet" href="heropagestyle.css">
+    <style>
+        /* Adding a black border effect to text */
+        .hero-content h1, .hero-content p {
+            text-shadow: 
+                -1px -1px 0 black, /* Top left */
+                 1px -1px 0 black, /* Top right */
+                -1px  1px 0 black, /* Bottom left */
+                 1px  1px 0 black; /* Bottom right */
+        }
+
+        /* Learn More button styles */
+        .cssbuttons-io-button {
+            background: #a370f0;
+            color: white;
+            font-family: inherit;
+            padding: 0.35em;
+            padding-left: 1.2em;
+            font-size: 17px;
+            font-weight: 500;
+            border-radius: 0.9em;
+            border: none;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            box-shadow: inset 0 0 1.6em -0.6em #714da6;
+            overflow: hidden;
+            position: relative;
+            height: 2.8em;
+            padding-right: 3.3em;
+            cursor: pointer;
+        }
+
+        .cssbuttons-io-button .icon {
+            background: white;
+            margin-left: 1em;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.2em;
+            width: 2.2em;
+            border-radius: 0.7em;
+            box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+            right: 0.3em;
+            transition: all 0.3s;
+        }
+
+        .cssbuttons-io-button:hover .icon {
+            width: calc(100% - 0.6em);
+        }
+
+        .cssbuttons-io-button .icon svg {
+            width: 1.1em;
+            transition: transform 0.3s;
+            color: #7b52b9;
+        }
+
+        .cssbuttons-io-button:hover .icon svg {
+            transform: translateX(0.1em);
+        }
+
+        .cssbuttons-io-button:active .icon {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <!-- Text with black border -->
+            <h1>Exploring the Universe for a Better Future</h1>
+            <p>Join us on our journey of space exploration and scientific discoveries.</p>
+            <!-- Custom Learn More Button -->
+            <a href="https://newsable.asianetnews.com/technology/isro-greatest-achievements" 
+               class="cssbuttons-io-button" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Learn More
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
